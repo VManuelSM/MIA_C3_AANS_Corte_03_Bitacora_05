@@ -44,6 +44,30 @@ El informe completo (introducción, desarrollo y conclusión) se redactó en la 
 
 ---
 
+### Figuras
+
+![Pair plot de las valoraciones sin etiquetar](fig1_pairplot_base.png)
+
+*Figura 1. Pair plot de las valoraciones de turistas sin etiquetar. El grueso de los turistas se concentra en un núcleo denso de valoraciones bajas-medias, con colas dispersas hacia valores altos: los candidatos naturales a ser marcados como ruido.*
+
+![Mapa de calor de la silueta](fig2_silhouette_heatmap.png)
+
+*Figura 2. Mapa de calor de la puntuación de silueta en función de `eps` y `min_samples` (datos estandarizados). El recuadro rojo marca la configuración seleccionada.*
+
+![Curva de k-distancias](fig3_kdistance.png)
+
+*Figura 3. Distancia ordenada al 3er vecino más cercano. El valor `eps = 1.6` (línea roja) cae justo en el codo donde la curva se dispara, lo que respalda de forma independiente la elección obtenida por la silueta.*
+
+![Anomalías detectadas por DBSCAN](fig4_pairplot_dbscan_anomalias.png)
+
+*Figura 4. Gráfico de pares con las anomalías (`-1`) resaltadas en naranja. Se sitúan sistemáticamente en las colas de las distribuciones.*
+
+![Concordancia DBSCAN vs Isolation Forest](fig5_comparacion_iso_dbscan.png)
+
+*Figura 5. Concordancia entre DBSCAN e Isolation Forest. En rojo los turistas señalados por ambos métodos, en naranja/verde los exclusivos de cada uno.*
+
+---
+
 ### Resultados principales
 
 | Método | Anomalías | Silueta | Coincidencias |
